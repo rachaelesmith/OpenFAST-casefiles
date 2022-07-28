@@ -1,0 +1,8 @@
+Primary input files for the ElastoDyn, HydroDyn and MoorDyn modules of OpenFAST, compatible with OpenFAST 2.3.0. 
+
+Files describe the structural, hydrodynamic and mooring system properties of a 2MW turbine on a spar platform, based on the floating turbine Haenkaze. HydroData contains the hydrostatic, added mass and damping properties (generated using WAMIT) of the spar platform required to obtain a first order potential flow solution in HydroDyn. 
+
+Turbine properties were defined based on available information for Haenkaze [1] and the Hitachi HWT2.0-80 turbine. Platform mass properties are estimated based on available information. Nacelle, hub and drivetrain properties are from the UT80d-2.0MW downwind turbine [2]. Additional yaw stiffness and damping is added in HydroDyn for model stability.
+
+[1] Tanaka, K., Sato, I., Utsunomiya, T., and Kakuya, H., 2019, “Comparison of Dynamic Response in a 2MW Floating Offshore Wind Turbine During Typhoon Approaches,” Proceedings of the ASME 2019 38th International Conference on Ocean, Offshore and Arctic Engineering, Glasgow, U.K.
+[2] The University of Tokyo and Hitachi Ltd, 2019, “2MW Baseline Wind Turbine Model Development (WP1-1).”
