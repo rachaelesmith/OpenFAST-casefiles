@@ -1,5 +1,5 @@
 ------- ELASTODYN v1.03.* INPUT FILE -------------------------------------------
-6 MW wind turbine on a floating spar platform based on the Hywind Scotland turbines. Properties from the SWT-6.0-154 turbine and Hywind Scotland floating wind farm where available. Remaining properties from the NREL 5 MW turbine (scaled up where appropriate).
+6 MW wind turbine on a floating spar platform based on the Hywind Scotland turbines. 
 ---------------------- SIMULATION CONTROL --------------------------------------
 False         Echo        - Echo input data to "<RootName>.ech" (flag)
           3   Method      - Integration method: {1: RK4, 2: AB4, or 3: ABM4} (-)
