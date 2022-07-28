@@ -1,0 +1,59 @@
+﻿--------------------- MoorDyn Input File ------------------------------------
+Mooring system for Hywind Scotland 6MW turbine HS4
+True    Echo      - echo the input file data (flag)
+---------------------- LINE TYPES ---------------------------------------
+2        NTypes    - number of LineTypes
+LineType     Diam     MassDen	   EA        BA/-zeta  Can   Cat   Cdn   Cdt
+(-)          (m)      (kg/m)       (N)       (N-s/-)   (-)   (-)   (-)   (-)
+Main      0.2646       432.2      2.3988e+09   -0.8    1.0   0.5   2.4   1.15
+Bridle    0.2376       348.5      2.3473e+09   -0.8    1.0   0.5   2.4   1.15
+---------------------- CONNECTION PROPERTIES ---------------------------------------
+9       NConnects - number of connections including anchors and fairleads
+Node Type       X        Y       Z   	  M     V      FX   FY   FZ   CdA   CA
+(-)  (-)       (m)      (m)     (m)   	(kg)  (m^3)  (kN) (kN) 	(kN) (m^2)  (-)
+1     Fixed   640.0      0      -100.0   0      0      0     0     0    0    0
+2     Connect  39.651    0       -54.868 0      0      0     0     0    0    0 
+3     Vessel    4.0      6.93    -20.6   0      0      0     0     0    0    0
+4     Fixed  -320.0   -554.2563 -100.0   0      0      0     0     0    0    0
+5     Connect -19.8255 -34.3388  -54.868 0      0      0     0     0    0    0 
+6     Vessel    4.0     -6.93    -20.6   0      0      0     0     0    0    0
+7     Fixed  -320.0    554.2563 -100.0   0      0      0     0     0    0    0
+8     Connect -19.8255  34.3388  -54.868 0      0      0     0     0    0    0 
+9     Vessel   -8.0      0       -20.6   0      0      0     0     0    0    0
+---------------------- LINE PROPERTIES ---------------------------------------
+9        NLines    - number of line objects
+Line    LineType  UnstrLen  NumSegs   NodeAnch  NodeFair  Flags/Outputs
+(-)       (-)       (m)       (-)       (-)       (-)         (-)
+1       Bridle     50.0        20        5         9          tc
+2       Bridle     50.0        20        5         6          tc
+3       Main      609.7        20        4         5          -  
+4       Bridle     50.0        20        2         6          tc
+5       Bridle     50.0        20        2         3          tc
+6       Main      609.7        20        1         2          -  
+7       Bridle     50.0        20        8         3          tc
+8       Bridle     50.0        20        8         9          tc
+9       Main      609.7        20        7         8          -  
+---------------------- SOLVER OPTIONS-----------------------------------------
+0.0005    dtM       - time step to use in mooring integration (s)
+3.0e6    kbot      - bottom stiffness (Pa/m)
+3.0e4    cbot      - bottom damping (Pa-s/m)
+100        WtrDpth      - water depth (m)
+1.0      dtIC      - time interval for analyzing convergence during IC gen (s)
+600       TmaxIC    - max time for ic gen (s)
+4.0      CdScaleIC - factor by which to scale drag coefficients during dynamic relaxation (-)
+0.001    threshIC  - threshold for IC convergence (-)
+------------------------ OUTPUTS --------------------------------------------
+FairTen1
+L1N19T
+FairTen2
+L2N19T
+FairTen4
+L4N19T
+FairTen5
+L5N19T
+FairTen7
+L7N19T
+FairTen8
+L8N19T
+END
+------------------------- need this line --------------------------------------

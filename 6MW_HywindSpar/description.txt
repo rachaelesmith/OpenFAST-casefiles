@@ -1,0 +1,8 @@
+Primary input files for the ElastoDyn, HydroDyn and MoorDyn modules of OpenFAST, compatible with OpenFAST 2.3.0. 
+
+Files describe the structural, hydrodynamic and mooring system properties of a 6MW turbine on a spar platform, based on the Hywind Scotland turbines. HydroData contains the hydrostatic, added mass and damping properties (generated using WAMIT) of the spar platform required to obtain a first order potential flow solution in HydroDyn. 
+
+Turbine properties were defined based on available information for the SWT-6.0-154 turbine and the Hywind Scotland floating wind farm [1]. Individual component mass properties are estimated based on a combination of available information and properties of the NREL 5 MW reference turbine [2]. Nacelle and rotor shaft configuration are the same as those for the NREL 5 MW turbine due to lack of available information. Additional linear yaw damping is added in HydroDyn for model stability.
+
+[1] Catapult ORE, “Floating Turbine Design Cases” [Online]. Available: https://pod.ore.catapult.org.uk/data-collection/floating-turbine-design-cases.
+[2] Jonkman, J., Butterfield, S., Musial, W., and Scott, G., 2009, Definition of a 5-MW Reference Wind Turbine for Offshore System Development, NREL.
