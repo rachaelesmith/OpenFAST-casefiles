@@ -109,7 +109,7 @@ PropSetID    PropD         PropThck
 ---------------------- SIMPLE HYDRODYNAMIC COEFFICIENTS (model 1) --------------
      SimplCd    SimplCdMG    SimplCa    SimplCaMG    SimplCp    SimplCpMG   SimplAxCa  SimplAxCaMG  SimplAxCp   SimplAxCpMG
        (-)         (-)         (-)         (-)         (-)         (-)         (-)         (-)         (-)         (-)
-       0.60       0.00        1.00        0.00        1.00        0.00        0.00        0.00        0.00        0.00 
+       0.65       0.00        1.00        0.00        1.00        0.00        0.00        0.00        0.00        0.00 
 ---------------------- DEPTH-BASED HYDRODYNAMIC COEFFICIENTS (model 2) ---------
              0   NCoefDpth       - Number of depth-dependent coefficients (-)
 Dpth      DpthCd   DpthCdMG   DpthCa   DpthCaMG       DpthCp   DpthCpMG   DpthAxCa   DpthAxCaMG       DpthAxCp   DpthAxCpMG
@@ -118,11 +118,12 @@ Dpth      DpthCd   DpthCdMG   DpthCa   DpthCaMG       DpthCp   DpthCpMG   DpthAx
              0   NCoefMembers       - Number of member-based coefficients (-)
 MemberID    MemberCd1     MemberCd2    MemberCdMG1   MemberCdMG2    MemberCa1     MemberCa2    MemberCaMG1   MemberCaMG2    MemberCp1     MemberCp2    MemberCpMG1   MemberCpMG2   MemberAxCa1   MemberAxCa2  MemberAxCaMG1 MemberAxCaMG2  MemberAxCp1  MemberAxCp2   MemberAxCpMG1   MemberAxCpMG2
    (-)         (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)           (-)
--------------------- MEMBERS -------------------------------------------------
+    1         0.767	    0.767         0.00		0.00		1.00	     1.00	   0.00		 0.00	       1.00	     1.00	   0.00		 0.00		0.00	     0.00	   0.00		 0.00		0.00	     0.00		   0.00		0.00	
+    -------------------- MEMBERS -------------------------------------------------
              4   NMembers       - Number of members (-)
 MemberID  MJointID1  MJointID2  MPropSetID1  MPropSetID2  MDivSize   MCoefMod  PropPot   [MCoefMod=1: use simple coeff table, 2: use depth-based coeff table, 3: use member-based coeff table] [ PropPot/=0 if member is modeled with potential-flow theory]
   (-)        (-)        (-)         (-)          (-)        (m)      (switch)   (flag)
-    1         1          2           1            1         0.5000      1        True
+    1         1          2           1            1         0.5000      3        True
     2         2          3           1            1         0.5000      1        True 
     3         3		 4           1            2         0.5000      1        True
     4	      4		 5	     2		  2	    0.5000      1        True
